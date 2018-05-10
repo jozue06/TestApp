@@ -2,33 +2,40 @@
 'use strict';
 
 $(function() {
+  console.log('fucnk');
 
   var FADE_TIME = 250; // ms
 
   // Initialize variables
-  var socket = io.connect('https://blank-face-beta.herokuapp.com/');
+  const url = 'https://blank-face-beta.herokuapp.com';
+  var socket = io.connect(url); //for Ios socket.io only
   var $window = $(window);
   var $usernameInput = $('.userName'); // Input for username
   var $messages = $('.messages'); // Messages area
   var $inputMessage = $('.inputMessage'); // Input message input box
 
-  var $chatPage = $('.chat.page'); // The chatroom page
+  var $chatPage = $('.chat.page'); // The chat page
 
   $chatPage.show();
 
-  $.get('/messages').then(chatHistory => {
+
+  console.log('device says its ready');
+
+  $.getJSON( url +'/messages').then(chatHistory => {
     let formHis = chatHistory.map(history => {
       return `<strong>${history.username}</strong> ${history.message}`;
     });
     formHis.forEach(msg => $('.messages').append($('<li>').html(msg)));
   });
 
+
+
   // Sends a chat message
   function sendMessage () {
     var message = $inputMessage.val();
     message = cleanInput(message);
     var username = $usernameInput.val();
-    // This section clears out input fields:
+    // This section clears out input field:
     $inputMessage.val('');
     addChatMessage({
       username: username,
@@ -84,8 +91,5 @@ $(function() {
     addChatMessage(data);
   });
 });
-
-
-
 
 

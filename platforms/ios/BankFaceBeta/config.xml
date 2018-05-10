@@ -19,17 +19,11 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <name>HelloCordova</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+    <name>BankFaceBeta</name>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-intent href="https://blank-face-beta.herokuapp.com/" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />

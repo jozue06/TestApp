@@ -4,8 +4,8 @@ const cors = require('cors');
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
-const io = require('socket.io')(server);
-var port = process.env.PORT || 3001;
+const io = require('socket.io')(server);  
+var port = process.env.PORT || 3000;
 
 const chatHistory = [];
 
@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended:true}));
 app.get('/messages', (req, res) => {
   res.send(chatHistory);
 });
-app.use(express.static('public'));
+app.use(express.static('./'));
 
 server.listen(port, function () {
 });

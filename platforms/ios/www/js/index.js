@@ -6,7 +6,7 @@ $(function() {
   var FADE_TIME = 250; // ms
 
   // Initialize variables
-  var socket = io();
+  var socket = io.connect('https://blank-face-beta.herokuapp.com/');
   var $window = $(window);
   var $usernameInput = $('.userName'); // Input for username
   var $messages = $('.messages'); // Messages area

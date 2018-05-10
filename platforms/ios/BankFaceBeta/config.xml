@@ -23,7 +23,7 @@
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
-    <allow-intent href="https://blank-face-beta.herokuapp.com/" />
+    <allow-intent href="https://blank-face-beta.herokuapp.com" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />

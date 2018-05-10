@@ -1,9 +1,9 @@
-# Blank Face chat app beta v0.7
+# Blank Face chat app beta v0.7 for Apple iOS
 
 
 ## What is BlankFace?
 
-BlankFace is a free and super minimalistic chat app. 
+BlankFace is a free and super minimalistic cross-platform chat app.
 
 **This chat is not safe** All messages go out globally to any and all users. All of these messages are pushed to a simple empty array. The memory is volatile. After about 30min of server inactivity, it shuts down, and the "chat history" is gone forever. 
 

@@ -112,7 +112,7 @@
     id prefObj = nil;
 
     // By default, DisallowOverscroll is false (thus bounce is allowed)
-    BOOL bounceAllowed = !([settings cordovaBoolSettingForKey:@"DisallowOverscroll" defaultValue:YES]);
+    BOOL bounceAllowed = YES;
 
     // prevent webView from bouncing
     if (!bounceAllowed) {

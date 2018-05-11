@@ -2,7 +2,6 @@
 'use strict';
 
 $(function() {
-  console.log('fucnk');
 
   var FADE_TIME = 250; // ms
 
@@ -26,6 +25,7 @@ $(function() {
       return `<strong>${history.username}</strong> ${history.message}`;
     });
     formHis.forEach(msg => $('.messages').append($('<li>').html(msg)));
+    $messages[0].scrollTop = $messages[0].scrollHeight;
   });
 
 

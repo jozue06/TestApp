@@ -112,16 +112,16 @@
     id prefObj = nil;
 
     // By default, DisallowOverscroll is false (thus bounce is allowed)
-    BOOL bounceAllowed = !([settings cordovaBoolSettingForKey:@"DisallowOverscroll" defaultValue:NO]);
+    BOOL bounceAllowed = !([settings cordovaBoolSettingForKey:@"DisallowOverscroll" defaultValue:YES]);
 
     // prevent webView from bouncing
     if (!bounceAllowed) {
         if ([uiWebView respondsToSelector:@selector(scrollView)]) {
-            ((UIScrollView*)[uiWebView scrollView]).bounces = NO;
+            ((UIScrollView*)[uiWebView scrollView]).bounces = YES;
         } else {
             for (id subview in self.webView.subviews) {
                 if ([[subview class] isSubclassOfClass:[UIScrollView class]]) {
-                    ((UIScrollView*)subview).bounces = NO;
+                    ((UIScrollView*)subview).bounces = YES;
                 }
             }
         }

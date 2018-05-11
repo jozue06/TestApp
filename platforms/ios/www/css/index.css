@@ -229,7 +229,10 @@ h1 {
     margin: 0;
     overflow-y: scroll;
     padding-bottom: 10em;
-    box-shadow: inset 0px -8px 7px #000
+    box-shadow: inset 0px -8px 7px #000;
+  
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
 
   }
   

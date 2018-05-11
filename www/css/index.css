@@ -230,10 +230,8 @@ h1 {
     overflow-y: scroll;
     padding-bottom: 10em;
     box-shadow: inset 0px -8px 7px #000;
-  
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
   .message.typing .messageBody {

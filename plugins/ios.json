@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "blank-face-beta-ios"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "blank-face-beta-ios"
     }
   },
   "dependent_plugins": {}

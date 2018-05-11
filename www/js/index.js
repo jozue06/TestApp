@@ -17,6 +17,11 @@ $(function() {
 
   $chatPage.show();
 
+  // var pushNotification = window.plugins.pushNotification;
+  // pushNotification.registerDevice({alert:true, badge:true, sound:true}, function(status) {
+  //   app.myLog.value+=JSON.stringify(['registerDevice status: ', status])+'\n';
+  //   app.storeToken(status.deviceToken);
+  // });
 
   console.log('device says its ready');
 

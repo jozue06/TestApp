@@ -18,7 +18,7 @@ $(function() {
   $chatPage.show();
 
 
-  console.log('device says its ready');
+  // console.log('device says its ready');
 
   $.getJSON( url +'/messages').then(chatHistory => {
     let formHis = chatHistory.map(history => {
@@ -43,6 +43,11 @@ $(function() {
     });
     let data = {username,message};
     socket.emit('new message', data);
+    // var pushNotification = window.plugins.pushNotification;
+  // pushNotification.registerDevice({alert:true, badge:true, sound:true}, function(status) {
+  //   app.myLog.value+=JSON.stringify(['registerDevice status: ', status])+'\n';
+  //   app.storeToken(status.deviceToken);
+  // });
   }
 
   function addChatMessage (data) {

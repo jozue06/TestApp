@@ -27,22 +27,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "PushNotifications"
 
-let pushNotifications = PushNotifications.shared
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    self.pushNotifications.start(instanceId: "514f8ff5-b9e1-49b1-927c-e6e144489ab8")
-    self.pushNotifications.registerForRemoteNotifications()
-    
-    return true
-}
-
-func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    self.pushNotifications.registerDeviceToken(deviceToken) {
-        try? self.pushNotifications.subscribe(interest: "hello")
-    }
-}
 
 @implementation AppDelegate
 

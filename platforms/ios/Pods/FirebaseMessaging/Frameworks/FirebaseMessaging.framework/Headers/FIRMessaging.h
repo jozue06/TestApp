@@ -338,6 +338,13 @@ NS_SWIFT_NAME(Messaging)
  */
 @property(nonatomic, copy, nullable) NSData *APNSToken NS_SWIFT_NAME(apnsToken);
 
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        self.pushNotifications.registerDeviceToken(deviceToken) {
+            try? self.pushNotifications.subscribe(interest: "hello")
+        }   
+    }
+}
+
 /**
  *  Set APNS token for the application. This APNS token will be used to register
  *  with Firebase Messaging using `FCMToken` or

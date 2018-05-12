@@ -75,21 +75,7 @@
 // only valid if 40x-Info.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation
 {
-    @import UIKit
-    @import PushNotifications
     
-    @UIApplicationMain
-    class AppDelegate: UIResponder, UIApplicationDelegate {
-        
-        var window: UIWindow?
-        let pushNotifications = PushNotifications.shared
-        
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-            self.pushNotifications.start(instanceId: "YOUR_INSTANCE_ID")
-            self.pushNotifications.registerForRemoteNotifications()
-            return true
-        }
-    }
     
     if (!url) {
         return NO;

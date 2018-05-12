@@ -6,6 +6,29 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!-- <script>
+
+          // Initialise a new Pusher object
+          var pusher = new Pusher('APP_KEY', {
+              encrypted: true
+          });
+          
+          // Bind to the connection's state-change event
+          // So we can update the UI based on the changes
+          pusher.connection.bind('state_change', function(states) {
+              document.getElementById("pusher-event").innerHTML = states.current;
+              var state = pusher.connection.state;
+              console.log("connection state: " + state);
+          });
+          
+          // Also subscribe to a channel and bind to an event
+          // Update the UI when a new message is received
+          var channel = pusher.subscribe('cordova');
+          channel.bind('cordova-event', function(data) {
+              document.getElementById("pusher-event").innerHTML = data.message;
+          });
+          
+          </script> -->
         
         <title>BlankFace ios test1 </title>
     </head>

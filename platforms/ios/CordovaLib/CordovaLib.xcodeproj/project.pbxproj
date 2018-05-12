@@ -156,6 +156,8 @@
 		7ED95D321AB9029B008C4574 /* NSDictionary+CordovaPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CordovaPreferences.m"; sourceTree = "<group>"; };
 		7ED95D331AB9029B008C4574 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
 		7ED95D341AB9029B008C4574 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		84CDF15320A79B7E00D113E8 /* libPushNotifications.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPushNotifications.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CDF15520A79B8600D113E8 /* libPods-BlankFaceBeta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-BlankFaceBeta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B082D21BB15CEA00D8DC35 /* CDVGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVGestureHandler.h; sourceTree = "<group>"; };
 		A3B082D31BB15CEA00D8DC35 /* CDVGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVGestureHandler.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* CordovaLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CordovaLib_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -200,6 +202,7 @@
 				C0C01EB31E3911D50056E6CB /* Cordova */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				30325A0B136B343700982B63 /* VERSION */,
+				84CDF15220A79B7E00D113E8 /* Frameworks */,
 			);
 			name = CordovaLib;
 			sourceTree = "<group>";
@@ -322,6 +325,15 @@
 			);
 			name = Public;
 			path = Classes/Public;
+			sourceTree = "<group>";
+		};
+		84CDF15220A79B7E00D113E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CDF15520A79B8600D113E8 /* libPods-BlankFaceBeta.a */,
+				84CDF15320A79B7E00D113E8 /* libPushNotifications.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A3B082D11BB15CEA00D8DC35 /* CDVGestureHandler */ = {
@@ -552,6 +564,7 @@
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -577,6 +590,7 @@
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -687,7 +701,7 @@
 		C0C01EB71E3911D50056E6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -722,7 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Cordova/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -738,7 +752,7 @@
 		C0C01EB81E3911D50056E6CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -769,7 +783,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Cordova/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "$(inherited)";

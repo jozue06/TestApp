@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C396C005E256FCB8702A59445A78FDC"
+               BlueprintIdentifier = "FE927DA878E72D6B06D17C5D385A2667"
                BlueprintName = "PushNotifications"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPushNotifications.a">
+               BuildableName = "PushNotifications.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

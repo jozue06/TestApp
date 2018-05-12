@@ -1,4 +1,4 @@
-module Pods_BlankFaceBeta {
+framework module Pods_BlankFaceBeta {
   umbrella header "Pods-BlankFaceBeta-umbrella.h"
 
   export *

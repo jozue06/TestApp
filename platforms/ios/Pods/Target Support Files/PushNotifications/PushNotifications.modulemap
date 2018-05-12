@@ -1,4 +1,4 @@
-module PushNotifications {
+framework module PushNotifications {
   umbrella header "PushNotifications-umbrella.h"
 
   export *

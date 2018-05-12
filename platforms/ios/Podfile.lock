@@ -1,0 +1,16 @@
+PODS:
+  - PushNotifications (0.10.7)
+
+DEPENDENCIES:
+  - PushNotifications
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PushNotifications
+
+SPEC CHECKSUMS:
+  PushNotifications: 2e3df1e301e19ae2a100267f8387da5fc471ecc7
+
+PODFILE CHECKSUM: f812614b597bdb9fccec29ff1099cba8876a3d6e
+
+COCOAPODS: 1.5.2

@@ -1,0 +1,6 @@
+module Pods_BlankFaceBeta {
+  umbrella header "Pods-BlankFaceBeta-umbrella.h"
+
+  export *
+  module * { export * }
+}

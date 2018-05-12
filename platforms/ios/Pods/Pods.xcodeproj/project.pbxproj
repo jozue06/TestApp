@@ -391,7 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36AC245A72FC4665794A568D1B04CD92 /* Pods-BlankFaceBeta.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -416,7 +416,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 718EEBDA0BC72CD054033A2365DADA7F /* Pods-BlankFaceBeta.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

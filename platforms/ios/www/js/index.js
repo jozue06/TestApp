@@ -2,7 +2,6 @@
 'use strict';
 
 $(function() {
-  console.log('fucnk');
 
   var FADE_TIME = 250; // ms
 

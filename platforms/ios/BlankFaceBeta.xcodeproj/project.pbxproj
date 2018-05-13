@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -14,8 +13,9 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		841FAD8820A7ACCE00957E99 /* PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841FAD8220A7A98300957E99 /* PusherSwift.framework */; };
-		841FAD8920A7ACCE00957E99 /* PusherSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 841FAD8220A7A98300957E99 /* PusherSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84FF196720A7B58400202A1F /* PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FF196220A7B33900202A1F /* PusherSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		84FF196820A7B58400202A1F /* PusherSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FF196220A7B33900202A1F /* PusherSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84FF196B20A7B5FC00202A1F /* PusherSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84FF196220A7B33900202A1F /* PusherSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +43,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		841FAD8A20A7ACCE00957E99 /* Embed Frameworks */ = {
+		84FF196920A7B58400202A1F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				841FAD8920A7ACCE00957E99 /* PusherSwift.framework in Embed Frameworks */,
+				84FF196820A7B58400202A1F /* PusherSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FF196A20A7B5EC00202A1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84FF196B20A7B5FC00202A1F /* PusherSwift.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -72,8 +82,8 @@
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* BlankFaceBeta-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlankFaceBeta-Prefix.pch"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = BlankFaceBeta/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		841FAD8220A7A98300957E99 /* PusherSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PusherSwift.framework; sourceTree = "<group>"; };
 		84CDF15720A79C0C00D113E8 /* libPushNotifications.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPushNotifications.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FF196220A7B33900202A1F /* PusherSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PusherSwift.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BlankFaceBeta-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BlankFaceBeta-Info.plist"; path = "BlankFaceBeta/BlankFaceBeta-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
@@ -87,7 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				841FAD8820A7ACCE00957E99 /* PusherSwift.framework in Frameworks */,
+				84FF196720A7B58400202A1F /* PusherSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +128,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				841FAD8220A7A98300957E99 /* PusherSwift.framework */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -186,6 +195,7 @@
 		C23CFCBC275049E822AFA716 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84FF196220A7B33900202A1F /* PusherSwift.framework */,
 				84CDF15720A79C0C00D113E8 /* libPushNotifications.a */,
 			);
 			name = Frameworks;
@@ -211,7 +221,8 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				841FAD8A20A7ACCE00957E99 /* Embed Frameworks */,
+				84FF196920A7B58400202A1F /* Embed Frameworks */,
+				84FF196A20A7B5EC00202A1F /* CopyFiles */,
 			);
 			buildRules = (
 			);

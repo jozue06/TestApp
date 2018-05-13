@@ -182,7 +182,7 @@ module.exports.run = function (buildOpts) {
 
             var locations = {
                 root: projectPath,
-                pbxproj: path.join(projectPath, projectName + '.xcworkspace', 'project.pbxproj')
+                pbxproj: path.join(projectPath, projectName + '.xcodeproj', 'project.pbxproj')
             };
 
             var bundleIdentifier = projectFile.parse(locations).getPackageName();
@@ -243,18 +243,18 @@ module.exports.run = function (buildOpts) {
 function findXCodeProjectIn (projectPath) {
     // 'Searching for Xcode project in ' + projectPath);
     var xcodeProjFiles = shell.ls(projectPath).filter(function (name) {
-        return path.extname(name) === '.xcworkspace';
+        return path.extname(name) === '.xcodeproj';
     });
 
     if (xcodeProjFiles.length === 0) {
         return Q.reject('No Xcode project found in ' + projectPath);
     }
     if (xcodeProjFiles.length > 1) {
-        events.emit('warn', 'Found multiple .xcworkspace directories in \n' +
+        events.emit('warn', 'Found multiple .xcodeproj directories in \n' +
             projectPath + '\nUsing first one');
     }
 
-    var projectName = path.basename(xcodeProjFiles[0], '.xcworkspace');
+    var projectName = path.basename(xcodeProjFiles[0], '.xcodeproj');
     return Q.resolve(projectName);
 }
 

@@ -17,8 +17,6 @@
  under the License.
  */
 
-
-
 #import "CDVAppDelegate.h"
 
 @implementation CDVAppDelegate
@@ -77,8 +75,6 @@
 // only valid if 40x-Info.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation
 {
-    
-    
     if (!url) {
         return NO;
     }
@@ -101,8 +97,6 @@
 
     return YES;
 }
-
-
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000  
 - (NSUInteger)application:(UIApplication*)application supportedInterfaceOrientationsForWindow:(UIWindow*)window

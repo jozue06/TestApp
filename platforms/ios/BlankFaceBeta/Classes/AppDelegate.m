@@ -25,31 +25,14 @@
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
-
-
 #import "AppDelegate.h"
 #import "MainViewController.h"
-@import UserNotifications;
-#import <PusherSwift/PusherSwift-Swift.h>
 
-@interface AppDelegate ()
-
-@property (nonatomic, retain, readwrite) Pusher *pusher;
-
-@end
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
-    self.pusher = [[Pusher alloc] initWithKey:@"APP_KEY"];
-    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-    
-    [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionAlert | UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
-        // Enable or disable features based on authorisation.
-    }];
-    
-    [application registerForRemoteNotifications];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
